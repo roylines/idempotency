@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`idempotency should allow things to be configured 1`] = `
+Array [
+  Array [
+    Object {
+      "ConditionExpression": "attribute_not_exists(ID)",
+      "Item": Object {
+        "ID": "1",
+        "TTL": 61,
+      },
+      "Key": Object {
+        "ID": "1",
+      },
+      "TableName": "TABLE",
+    },
+  ],
+]
+`;
+
+exports[`idempotency should return replay false if not cached, or not in ddb 1`] = `
+Array [
+  Array [
+    1,
+  ],
+]
+`;
+
+exports[`idempotency should return replay false if not cached, or not in ddb 2`] = `
+Array [
+  Array [
+    1,
+  ],
+]
+`;
+
+exports[`idempotency should return replay false if not cached, or not in ddb 3`] = `
+Array [
+  Array [
+    Object {
+      "ConditionExpression": "attribute_not_exists(id)",
+      "Item": Object {
+        "id": "1",
+        "ttl": 61,
+      },
+      "Key": Object {
+        "id": "1",
+      },
+      "TableName": "idempotency",
+    },
+  ],
+]
+`;
+
+exports[`idempotency should return replay true if cached 1`] = `
+Array [
+  Array [
+    1,
+  ],
+]
+`;
+
+exports[`idempotency should return replay true if cached 2`] = `Array []`;
+
+exports[`idempotency should return replay true if cached 3`] = `Array []`;
+
+exports[`idempotency should return replay true if not cached, but in ddb 1`] = `
+Array [
+  Array [
+    1,
+  ],
+]
+`;
+
+exports[`idempotency should return replay true if not cached, but in ddb 2`] = `
+Array [
+  Array [
+    1,
+  ],
+]
+`;
+
+exports[`idempotency should return replay true if not cached, but in ddb 3`] = `
+Array [
+  Array [
+    Object {
+      "ConditionExpression": "attribute_not_exists(id)",
+      "Item": Object {
+        "id": "1",
+        "ttl": 61,
+      },
+      "Key": Object {
+        "id": "1",
+      },
+      "TableName": "idempotency",
+    },
+  ],
+]
+`;

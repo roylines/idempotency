@@ -4,15 +4,13 @@
   "description": "idempotent helpers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roylines/idempotency.git"
   },
-  "keywords": [
-    "idempotent"
-  ],
+  "keywords": ["idempotent,dynamodb"],
   "author": "Roy Lines",
   "license": "ISC",
   "bugs": {
@@ -24,6 +22,6 @@
     "uuid": "3.1.0"
   },
   "dependencies": {
-    "lru-cache": "^5.1.1"
+    "aws-sdk": "2.614.0"
   }
 }
