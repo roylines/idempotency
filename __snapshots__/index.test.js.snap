@@ -7,7 +7,7 @@ Array [
       "ConditionExpression": "attribute_not_exists(ID)",
       "Item": Object {
         "ID": "1",
-        "TTL": 61,
+        "TTL": 43,
       },
       "Key": Object {
         "ID": "1",

@@ -13,7 +13,7 @@ const configure = async config => {
 };
 
 const checkDynamoDB = async ({id}) => {
-  let ttl = Math.floor(Date.now() / 1000) + 60;
+  let ttl = Math.floor(Date.now() / 1000) + _config.ttl;
 
   let params = {
     TableName: _config.tablename,
