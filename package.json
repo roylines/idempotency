@@ -1,6 +1,6 @@
 {
   "name": "idempotency",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "idempotent helpers",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/roylines/idempotency.git"
   },
-  "keywords": ["idempotent,dynamodb"],
+  "keywords": [
+    "idempotent,dynamodb"
+  ],
   "author": "Roy Lines",
   "license": "ISC",
   "bugs": {
@@ -18,10 +20,10 @@
   },
   "homepage": "https://github.com/roylines/idempotency#readme",
   "devDependencies": {
-    "jest": "25.1.0",
-    "uuid": "3.1.0"
+    "jest": "26.6.3",
+    "uuid": "8.3.2"
   },
   "dependencies": {
-    "aws-sdk": "2.614.0"
+    "aws-sdk": "2.843.0"
   }
 }
